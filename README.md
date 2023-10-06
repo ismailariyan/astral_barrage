@@ -1,6 +1,22 @@
+# Team Name:
+
+Astral Barrage
+
+# Team Members:
+
+1. MD. Sakib E Saqlain (Team Lead)
+2. Jakaria Kamal (Developer)
+3. Ismail Ariyan (System Architect)
+4. Al Hadi Elaf (UI Designer)
+5. Fayzul Noor  Tabeeb (Researcher)
+
 # Space Fly
 
-Space Fly is an Android application that offers users the opportunity to embark on a celestial journey, exploring various planets and booking space travel packages. This app is developed using Java and Gradle, with Firebase Firestore serving as the data storage solution.
+Space Fly is a groundbreaking Android app that invites users to embark on a celestial odyssey, delving deep into the mysteries of our universe. Crafted with precision, it's meticulously developed using the versatile Java programming language, strengthened by the powerful Gradle build system. Beneath its surface lies the sophisticated Firebase Firestore, a cloud-based data storage solution that fuels the app's expansive database.
+
+Within the cosmic realms of Space Fly, users can explore an array of captivating planets, each with its own unique charm and intrigue. The app serves as an educational tool, offering a wealth of scientific knowledge and awe-inspiring visuals to enhance the celestial experience.
+
+But Space Fly doesn't stop at exploration; it transforms dreams into reality. Users can choose from a variety of meticulously designed space travel packages, catering to diverse preferences. This app, an amalgamation of technology and wonder, unlocks the mysteries of the universe, providing a gateway to the cosmos for those who seek to voyage beyond the stars.
 
 ## Features
 
@@ -11,6 +27,11 @@ Space Fly is an Android application that offers users the opportunity to embark 
 - **Interactive 3D and GIF Previews**: Get a sneak peek at your destination with immersive 3D and GIF previews of each package.
 
 - **Horizontal Package List**: Effortlessly navigate through available space travel packages in a horizontally scrollable list.
+
+- **AI assitant**: An AI chatbot to help plan your next celestial tour
+
+- **Enriching Knowledge**: Help enrich user's knowledge regarding various planets and their prominent geological sites through vivid descriptions and pictures
+
 
 ## Installation
 
