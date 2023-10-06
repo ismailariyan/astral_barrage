@@ -1,6 +1,4 @@
-# Team Name:
-
-Astral Barrage
+# Team Name: Astral Barrage
 
 # Team Members:
 
