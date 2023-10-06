@@ -12,8 +12,6 @@ Fortest is an Android application that offers users the opportunity to embark on
 
 - **Horizontal Package List**: Effortlessly navigate through available space travel packages in a horizontally scrollable list.
 
-- **Shimmer Effect**: Enjoy a captivating visual experience while packages load with a shimmer effect.
-
 ## Installation
 
 1. Clone this repository to your local machine using the following command:
