@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Fortest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme as needed -->
+        <item name="materialButtonStyle">@style/MyMaterialButtonStyle</item>
+    </style>
+    <style name="MyMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <!-- Customize the button's background color -->
+        <item name="backgroundTint">@color/customButtonColor</item>
+
+        <!-- Customize other button attributes as needed -->
+    </style>
+
+
+    <style name="Theme.Fortest" parent="Base.Theme.Fortest" />
+</resources>
