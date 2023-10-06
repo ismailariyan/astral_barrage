@@ -1,6 +1,6 @@
-# Fortest
+# Space Fly
 
-Fortest is an Android application that offers users the opportunity to embark on a celestial journey, exploring various planets and booking space travel packages. This app is developed using Java and Gradle, with Firebase Firestore serving as the data storage solution.
+Space Fly is an Android application that offers users the opportunity to embark on a celestial journey, exploring various planets and booking space travel packages. This app is developed using Java and Gradle, with Firebase Firestore serving as the data storage solution.
 
 ## Features
 
@@ -23,7 +23,7 @@ Fortest is an Android application that offers users the opportunity to embark on
 
 ## Usage
 
-1. **Launch the Fortest app on your Android device.**
+1. **Launch the Space Fly app on your Android device.**
 
 2. **Explore Popular Planets:**
 
