@@ -1,40 +1,74 @@
-package com.example.fortest;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
+import java.util.List;
 
 public class chatActivity extends AppCompatActivity {
-    LinearLayout layoutt;
-    TextView T1,T2,T3,T4,T5;
+    private ListView chatListView;
+    private EditText userInputEditText;
+    private Button sendButton;
+    private List<Message> messages;
+    private MessageAdapter messageAdapter; // Create an adapter to display messages
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-        layoutt=findViewById(R.id.chat);
 
-        T1=findViewById(R.id.t1);
-        T2=findViewById(R.id.t2);
-        T3=findViewById(R.id.t3);
-        T4=findViewById(R.id.t4);
-        T5=findViewById(R.id.t5);
+        // Initialize UI elements
+        chatListView = findViewById(R.id.chatListView);
+        userInputEditText = findViewById(R.id.userInputEditText);
+        sendButton = findViewById(R.id.sendButton);
 
+        // Initialize the list of messages
+        messages = new ArrayList<>();
 
-        layoutt.setOnClickListener(new View.OnClickListener() {
+        // Initialize the message adapter
+        messageAdapter = new MessageAdapter(this, messages);
+
+        // Set the adapter to the ListView
+        chatListView.setAdapter(messageAdapter);
+
+        // Set a click listener for the send button
+        sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                layoutt.setVisibility(View.GONE);
-                T1.setVisibility(View.VISIBLE);
-                T2.setVisibility(View.VISIBLE);
-                T3.setVisibility(View.VISIBLE);
-                T4.setVisibility(View.VISIBLE);
-                T5.setVisibility(View.VISIBLE);
+            public void onClick(View v) {
+                sendMessage();
             }
         });
-
     }
+
+    private void sendMessage() {
+        // Get user input message
+        String userMessage = userInputEditText.getText().toString();
+    
+        // Create a new message and add it to the list
+        Message userMessageObj = new Message(userMessage, true);
+        messages.add(userMessageObj);
+    
+        messageAdapter.notifyDataSetChanged();
+    
+        // Clear the user input field
+        userInputEditText.setText("");
+    
+        String chatbotResponse = getChatbotResponseFromAPI(userMessage);
+    
+        Message chatbotMessageObj = new Message(chatbotResponse, false);
+        messages.add(chatbotMessageObj);
+    
+        messageAdapter.notifyDataSetChanged();
+    
+    
+        chatListView.smoothScrollToPosition(messages.size() - 1);
+    }
+    
+    private String getChatbotResponseFromAPI(String userMessage) {
+    
+        return  userMessage;
+    }
+    
 }
